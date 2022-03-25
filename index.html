@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MovieBox</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -13,16 +15,95 @@
 
   <!-- HEADER PART -->
 
-  <header class="">
-    <section class="">
+  <header class="header">
+    <div class="container">
+      <div class="header__box">
+        <div class="header__logobox">
+          <a href="/"><img class="header__logo" src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="header__inputbox">
+          <input class="header__search" type="text" placeholder="What do you want to watch?">
+          <button class="header__searchbtn"><i class='bx bx-search'></i></button>
+        </div>
+        <div class="header__cate">
+          <button class="header__btn"><i class='bx bx-menu'></i></button>
+        </div>
+      </div>
 
-    </section>
+      <!-- Hero part -->
+
+      <div class="hero">
+        <h2 class="hero__title" id="caru-title">John Wick 3 : Parabellum</h2>
+        <div class="d-flex">
+          <div class="hero__imgdbbox d-flex">
+            <img class="hero__imdbimg" src="img/imgdb-icon.png" alt="imgbd">
+            <p class="hero__imgdbrating" id="caru-rt">86.0 / 100</p>
+          </div>
+          <div class="d-flex">
+            <i class='bx bxs-star hero__star'></i> <p class="hero__imgdbrating rt" id="caru-pr">97%</p>
+          </div>
+        </div>
+        <p class="hero__desc" id="caru-desc">John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+
+        <button class="hero__playbtn"><i class='bx bxs-caret-right-circle hero__playimg' ></i> Watch trailer</button>
+
+        <div class="hero__pagebox">
+          <button class="hero__pagebtn" id="page-1" onclick="pageBtn(event)">1</button>
+          <button class="hero__pagebtn" id="page-2" onclick="pageBtn(event)">2</button>
+          <button class="hero__pagebtn bpage" id="page-3" onclick="pageBtn(event)">3</button>
+          <button class="hero__pagebtn" id="page-4" onclick="pageBtn(event)">4</button>
+          <button class="hero__pagebtn" id="page-5" onclick="pageBtn(event)">5</button>
+        </div>
+
+      </div>
+
+      </div>
   </header>
 
   <!-- MAIN PART  -->
 
   <main>
 
+    <section class="featured">
+      <div class="container">
+        <div class="featured__head d-flex justify-content-between algin-items">
+          <h2 class="featured__title">Featured Movie</h2>
+          <a class="featured__more" href="#">See more <i class='bx bx-chevron-right featured__right-icon'></i></a>
+        </div>
+
+        <ul class="featured__list d-flex justify-content-between">
+          <!-- <li class="featured__item">
+            <div class="featured__imgbox">
+              <button class="featured__like"><i class='bx bxs-heart featured__like-icon'></i></button>
+              <img class="featured__img" src="https://picsum.photos/id/56/250/370" alt="img" id="img">
+            </div>
+            <div class="featured__infobox">
+              <p class="featured__year">2015</p>
+              <h2 class="featured__name">Stranger Things</h2>
+              <div class="featured__rt d-flex">
+                <i class='bx bxs-star featured__star'></i>
+                <i class='bx bxs-star featured__star'></i>
+                <i class='bx bxs-star featured__star'></i>
+                <i class='bx bxs-star featured__star'></i>
+                <i class='bx bxs-star featured__star'></i>
+                <i class='bx bxs-star featured__star'></i>
+              </div>
+              <p class="featured__cate">Action, Adventure, Horror</p>
+            </div>
+          </li> -->
+
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="fmodal" id="#id-modal">
+      <div class="container">
+        <div class ="fmodal__main" id="id-modal-main">
+          
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER PART  -->
@@ -31,7 +112,10 @@
 
   </footer>
 
+  <script src="js/normalized-movies.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

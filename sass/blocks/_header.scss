@@ -1,5 +1,75 @@
 /* HEADER PART  */
 
 .header {
-  background-color: #fff;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  background-image: url('/img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s linear;
+
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
+  &__logo {
+    width: 186px;
+    height: 50px;
+  }
+
+  &__inputbox {
+    display: flex;
+    position: relative;
+    width: 525px;
+  }
+
+  &__search {
+    width: 100%;
+    height: 36px;
+    background: none;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding: 6px 10px;
+    padding-right: 35px;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &__searchbtn {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  &__btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #be123c;
+    border: 1px solid #be123c;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
 }

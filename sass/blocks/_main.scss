@@ -1,2 +1,106 @@
 /* MAIN PART  */
 
+.featured {
+  padding-top: 82px;
+
+  &__head {
+    margin-bottom: 44px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000;
+  }
+
+  &__more {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #be123c;
+    transition: all 0.3s linear;
+  }
+
+  &__right-icon {
+    position: relative;
+    top: 8px;
+    font-size: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-bottom: 44px;
+  }
+
+  &__item {
+    width: 250px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+
+  &__imgbox {
+    position: relative;
+    width: 250px;
+    height: 370px;
+    margin-bottom: 12px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    background: rgba(243, 244, 246, 0.5);
+    border: none;
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+  }
+
+  &__like-icon {
+    color: #d1d5db;
+  }
+
+  &__year {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111827;
+    margin-bottom: 14px;
+  }
+
+  &__rt {
+    margin-bottom: 12px;
+  }
+
+  &__star {
+    color: yellow;
+  }
+
+  &__cate {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9ca3af;
+  }
+
+}
