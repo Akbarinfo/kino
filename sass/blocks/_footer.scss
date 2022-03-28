@@ -2,4 +2,62 @@
 
 .footer {
   background-color: #fff;
+  padding-top: 123px;
+  padding-bottom: 62px;
+  &__box {
+    width: 492px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-bottom: 36px;
+  }
+
+  &__item {
+    margin-right: 48px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &:hover .footer__icon {
+      color: #6b7280;
+    }
+  }
+
+  &__icon {
+    font-size: 32px;
+    color: #000;
+    transition: all 0.4s linear;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #111827;
+    transition: all 0.4s linear;
+  }
+
+  &__copy {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #6b7280;
+  }
+
+  &__ {
+
+  }
+
+  &__ {
+
+  }
+
+  &__ {
+
+  }
 }

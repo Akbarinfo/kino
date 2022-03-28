@@ -59,7 +59,7 @@ let movies = [
       "Animation",
       "Comedy",
       "Family",
-      "Fantasy", 
+      "Fantasy",
       "Horror"
     ],
     "summary": "The villains from the popular animated Disney films are gathered at the House of Mouse with plans to take over. Soon, the villains take over the house and kick out Mickey, Donald and Goofy. It's all up to Mickey and his friends to overthrow evil and return the House of Mouse to normal--or as close to normal as it get's.",

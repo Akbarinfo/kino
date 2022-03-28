@@ -22,10 +22,12 @@
           <a href="/"><img class="header__logo" src="img/logo.png" alt="logo"></a>
         </div>
         <div class="header__inputbox">
-          <input class="header__search" type="text" placeholder="What do you want to watch?">
-          <button class="header__searchbtn"><i class='bx bx-search'></i></button>
+          <input class="header__search" id="id-Isearch" type="search" placeholder="What do you want to watch?">
+          <button class="header__searchbtn" id="id-searchBtn"><i class='bx bx-search'></i></button>
         </div>
-        <div class="header__cate">
+        <div class="header__cate d-flex">
+          <button class="header__btnlike" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bxs-heart'></i></button>
+
           <button class="header__btn"><i class='bx bx-menu'></i></button>
         </div>
       </div>
@@ -54,15 +56,44 @@
           <button class="hero__pagebtn" id="page-4" onclick="pageBtn(event)">4</button>
           <button class="hero__pagebtn" id="page-5" onclick="pageBtn(event)">5</button>
         </div>
-
+      </div>
       </div>
 
+    <!-- Modal like  -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Your Favorite Movies</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+      <ul class="canvas flex-column" id="id-canvas">
+        <!-- <li class="canvas__item">salom</li> -->
+      </ul>
+    </div>x`
+
+    <!-- SEARCH PART  -->
+
+    <section class="search" onclick="funMain(event)" id="searchbox">
+      <div class="container">
+        <div class="search__main"  id="search-main">
+          <div class="search__box d-flex align-items-center">
+            <h2 class="search__title">Result</h2>
+          </div>
+          <ul class="search__list" id="id-search">
+
+          </ul>
+
+
+        </div>
+      </div>
+    </section>
+
   </header>
 
   <!-- MAIN PART  -->
 
   <main>
+    <!-- FEATUREAD PART  -->
 
     <section class="featured">
       <div class="container">
@@ -70,51 +101,134 @@
           <h2 class="featured__title">Featured Movie</h2>
           <a class="featured__more" href="#">See more <i class='bx bx-chevron-right featured__right-icon'></i></a>
         </div>
-
         <ul class="featured__list d-flex justify-content-between">
-          <!-- <li class="featured__item">
-            <div class="featured__imgbox">
-              <button class="featured__like"><i class='bx bxs-heart featured__like-icon'></i></button>
-              <img class="featured__img" src="https://picsum.photos/id/56/250/370" alt="img" id="img">
-            </div>
-            <div class="featured__infobox">
-              <p class="featured__year">2015</p>
-              <h2 class="featured__name">Stranger Things</h2>
-              <div class="featured__rt d-flex">
-                <i class='bx bxs-star featured__star'></i>
-                <i class='bx bxs-star featured__star'></i>
-                <i class='bx bxs-star featured__star'></i>
-                <i class='bx bxs-star featured__star'></i>
-                <i class='bx bxs-star featured__star'></i>
-                <i class='bx bxs-star featured__star'></i>
-              </div>
-              <p class="featured__cate">Action, Adventure, Horror</p>
-            </div>
-          </li> -->
-
         </ul>
-
       </div>
     </section>
+
+    <!-- FEATUREAD PART  END-->
+
+    <!-- ARRIVAL PART  -->
+
+    <section class="featured">
+      <div class="container">
+        <div class="featured__head d-flex justify-content-between algin-items">
+          <h2 class="featured__title">New Arrival</h2>
+          <a class="featured__more" href="#">See more <i class='bx bx-chevron-right featured__right-icon'></i></a>
+        </div>
+        <ul class="arrival d-flex justify-content-between">
+
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ARRIVAL PART  END-->
+
+    <!-- Exclusive Videos  -->
+
+    <section class="featured">
+      <div class="container">
+        <div class="featured__head d-flex justify-content-between algin-items">
+          <h2 class="featured__title">Exclusive Videos</h2>
+          <a class="featured__more" href="#">See more <i class='bx bx-chevron-right featured__right-icon'></i></a>
+        </div>
+        <ul class="exclusive d-flex justify-content-between">
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Exclusive Videos END -->
+
+        <!-- Featured Casts PART  -->
+
+        <section class="featured">
+          <div class="container">
+            <div class="featured__head d-flex justify-content-between algin-items">
+              <h2 class="featured__title">Featured Casts</h2>
+              <a class="featured__more" href="#">See more <i class='bx bx-chevron-right featured__right-icon'></i></a>
+            </div>
+            <ul class="d-flex justify-content-between">
+              <li class="featured__item">
+                <div class="featured__imgbox">
+                  <img class="featured__img" src="img/Poster.jpg" alt="casts">
+                </div>
+                <h3 class="featured__name">Keanu Reeves</h3>
+              </li>
+
+              <li class="featured__item">
+                <div class="featured__imgbox">
+                  <img class="featured__img" src="img/Poster-1.jpg" alt="casts">
+                </div>
+                <h3 class="featured__name">Ryan Reynolds</h3>
+              </li>
+
+              <li class="featured__item">
+                <div class="featured__imgbox">
+                  <img class="featured__img" src="img/Poster-2.jpg" alt="casts">
+                </div>
+                <h3 class="featured__name">Timothée Chalamet</h3>
+              </li>
+
+              <li class="featured__item">
+                <div class="featured__imgbox">
+                  <img class="featured__img" src="img/Poster-3.jpg" alt="casts">
+                </div>
+                <h3 class="featured__name">Chloë Grace Moretz</h3>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Featured Casts PART END-->
+
+    <!-- Modal part -->
 
     <section class="fmodal" id="#id-modal">
       <div class="container">
         <div class ="fmodal__main" id="id-modal-main">
-          
+
         </div>
       </div>
     </section>
+
+    <!-- modal part end  -->
+
+
   </main>
 
   <!-- FOOTER PART  -->
 
   <footer class="footer">
-
+    <div class="container">
+      <div class="footer__box">
+        <ul class="footer__list d-flex justify-content-center">
+          <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-facebook-square footer__icon'></i></a></li>
+          <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-instagram footer__icon'></i></a></li>
+          <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-twitter footer__icon'></i></a></li>
+          <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-youtube footer__icon'></i></a></li>
+        </ul>
+        <nav class="d-flex justify-content-between">
+          <ul class="footer__list d-flex">
+            <li class="footer__item"><a class="footer__link" href="#">Conditions of Use</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Privacy & Policy</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Press Room</a></li>
+          </ul>
+        </nav>
+        <p class="footer__copy">© 2021 MovieBox by Adriana Eka Prayudha  </p>
+      </div>
+    </div>
   </footer>
 
   <script src="js/normalized-movies.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/newfilms.js"></script>
+  <script src="js/exclusive.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/hero.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/modal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

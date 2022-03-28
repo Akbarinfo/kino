@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieBox</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+  <main>
+
+    <section class="poick">
+      <div class="container">
+        <div class="poick__main">
+          <div class="poick__box">
+            <form class="poick__form">
+              <label class="poick__label" for="InPoick">
+                <span class="poick__catename">Film name</span>
+                <input class="poick__input" type="text" id="InPoick" placeholder="What do you want to watch?" required>
+              </label>
+              <div class="d-flex">
+
+                <label class="poick__label" for="id-year-star">
+                  <span class="poick__catename">To</span>
+                  <input class="poick__number" type="number" name="year" value="2000" id="id-year-star">
+                </label>
+
+                <label class="poick__label" for="">
+                  <span class="poick__catename">Do</span>
+                  <input class="poick__number" type="number" name="year" value="2018" id="id-year-end">
+                </label>
+              </div>
+              <label class="poick__label" for="id-select">
+                <span class="poick__catename">Category</span>
+                <select class="poick__select" name="select" id="id-select">
+                  <option value="all">All</option>
+                </select>
+              </label>
+              <button class="poick__btn" type="submit" id="BtnPoick">Search</button>
+            </form>
+
+            <ul class="poick__list" id="id-poick">
+              <li class="poick__item"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- FOOTER PART  -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__box">
+      <ul class="footer__list d-flex justify-content-center">
+        <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-facebook-square footer__icon'></i></a></li>
+        <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-instagram footer__icon'></i></a></li>
+        <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-twitter footer__icon'></i></a></li>
+        <li class="footer__item"><a href="#" target="_blank"><i class='bx bxl-youtube footer__icon'></i></a></li>
+      </ul>
+      <nav class="d-flex justify-content-between">
+        <ul class="footer__list d-flex">
+          <li class="footer__item"><a class="footer__link" href="#">Conditions of Use</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Privacy & Policy</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Press Room</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copy">© 2021 MovieBox by Adriana Eka Prayudha  </p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/normalized-movies.js"></script>
+<script src="js/poick.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -58,7 +58,13 @@
     color: #fff;
   }
 
-  &__btn {
+  &__btnlike {
+    margin-right: 15px;
+  }
+
+
+  &__btn,
+  &__btnlike {
     width: 36px;
     height: 36px;
     display: flex;
@@ -70,6 +76,91 @@
     font-size: 24px;
     color: #fff;
     cursor: pointer;
+  }
+}
+
+
+// Modal like //
+
+.canvas {
+  list-style-type: none;
+  padding: 20px;
+  overflow-y: scroll;
+
+  &__item {
+    width: 340px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__imgbox {
+    position: relative;
+    width: 340px;
+    height: 220px;
+    margin-bottom: 12px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+  }
+
+  &__like {
+    display: none;
+    
+  }
+
+  &__like-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #be123dc5;
+    border: none;
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+    font-size: 30px;
+    color: #d1d5db;
+    cursor: pointer;
+  }
+
+  &__year {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111827;
+    margin-bottom: 14px;
+  }
+
+  &__rt {
+    margin-bottom: 12px;
+  }
+
+  &__star {
+    color: yellow;
+  }
+
+  &__cate {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9ca3af;
   }
 
 }
