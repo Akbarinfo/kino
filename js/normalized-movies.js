@@ -3,7 +3,7 @@ let movies = [
     "title": "Patton Oswalt: Annihilation",
     "year": 2017,
     "categories": [
-      "Uncategorized"
+      "Uncategorized",
     ],
     "summary": "Patton Oswald, despite a personal tragedy, produces his best standup yet. Focusing on the tribulations of the Trump era and life after the loss of a loved one, Patton Oswald continues his journey to contribute joy to the world.",
     "imdbId": "tt7026230",
