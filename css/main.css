@@ -142,12 +142,38 @@ html {
   right: 10px;
   background: none;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.header__searchbtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   color: #fff;
 }
 
 .header__btnlike {
   margin-right: 15px;
+}
+
+.header__link {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.header__link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
 }
 
 .header__btn, .header__btnlike {
