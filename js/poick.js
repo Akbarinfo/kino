@@ -7,8 +7,9 @@ const elSelect = document.querySelector('select');
 const elBtnPoick = document.querySelector('#BtnPoick');
 const elUlBox = document.querySelector('#id-poick');
 
+
 // Bu funsiya vazifasi shundan iboratki, bunda birdaniga
-// hoxlagancha o'zgaruchi yaratsa bo'ladi, namuna uchun 75 qator dagi code
+// hoxlagancha o'zgaruchi yaratsa bo'ladi, namuna uchun 61 va 74 qator dagi code
 function createElements(...array) {
   return array.map(el => {
     return document.createElement(el)
@@ -56,8 +57,6 @@ function funSearch(e) {
     }
   }
 
-
-  console.log(filmNew.length)
   if(filmNew.length == 0) {
     let [li, h1] = createElements('li', 'h1')
     li.className = 'search__item d-flex';
@@ -74,7 +73,7 @@ function funSearch(e) {
   for(let i = 0; i < filmNew.length; i++) {
     let [li, imgdiv, img, h3] = createElements('li', 'div', 'img', 'h3');
     li.className = 'search__item d-flex';
-    li.setAttribute('onclick', 'funFilms()');
+    li.setAttribute('onclick', 'funFilm(event)');
     li.setAttribute('id', filmNew[i].imdbId);
 
     imgdiv.className = 'search__imgbox';
@@ -98,8 +97,9 @@ function funSearch(e) {
 
 // modalga chiqarish joyi
 function funFilm(e) {
-  let a = e.path[2].id;
+  let a = e.path[1].id;
 
+  console.log(a)
   console.log(e)
 
   filmNew.forEach((item) => {

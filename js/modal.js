@@ -1,8 +1,11 @@
 /// modal qismi
+const elMov = document.querySelector('.featured__list');
+const elModal = document.querySelector('.fmodal');
+const elModalM = document.querySelector('#id-modal-main');
+const elDelModal = document.querySelector('#id-delModal');
+
 function funFilms(e) {
   let a = e.path[1].id;
-
-  console.log(e)
 
   movies.forEach((item) => {
     if(a == item.imdbId) {
